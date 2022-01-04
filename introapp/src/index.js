@@ -1,10 +1,10 @@
 import React from 'react';
-import react from 'react';
-import reactDOM from 'react-dom';
-
-reactDOM.render(
+import ReactDOM from 'react-dom';
+var fname = "Harsh";
+var lname = "Ved";
+ReactDOM.render(
   <>
-    <h1>Harsh Ved</h1>
+    <h1>{`My name is ${fname} ${lname}`}</h1>
     <h3>Ozyus Solutions</h3> 
   </>, 
   document.getElementById('root')
