@@ -1,5 +1,5 @@
 import React from "react";
-import Calculator, { add, div, mul, sub } from './Calculator';
+import { add, div, mul, sub } from './Calculator';
 
 function Bullet(){
     return (
