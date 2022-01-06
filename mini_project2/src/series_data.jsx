@@ -17,6 +17,12 @@ const sdata = [
         sname : "Special Ops 1.5",
         link : "https://www.hotstar.com/in/tv/special-ops-15/1260071971",
     },
+    {
+        img_src : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrcg6psjngxzC2i6XdzZ3ECkGW4r2TYw1MxA&usqp=CAU",
+        category : "Netflix Original",
+        sname : "Vampire Diaries",
+        link : "https://www.netflix.com/in/title/70143860?source=35",
+    },
 ];
 
 export default sdata;

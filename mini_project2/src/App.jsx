@@ -7,24 +7,16 @@ function App(){
     return(
         <>
         <Heading />
-        <Card 
-            img_src = {sdata[0].img_src}
-            category = {sdata[0].category}
-            sname = {sdata[0].sname}
-            link = {sdata[0].link}
-        />
-        <Card 
-            img_src = {sdata[1].img_src} 
-            category = {sdata[1].category}
-            sname = {sdata[1].sname}
-            link = {sdata[1].link}
-        />
-        <Card 
-            img_src = {sdata[2].img_src}
-            category = {sdata[2].category}
-            sname = {sdata[2].sname}
-            link = {sdata[2].link}
-        />
+        {sdata.map((currValue) =>{
+            return (
+                <Card 
+                    img_src = {currValue.img_src}
+                    category = {currValue.category}
+                    sname = {currValue.sname}
+                    link = {currValue.link}
+                />
+            );
+        })};
         </>
     );
 }
