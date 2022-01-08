@@ -9,6 +9,14 @@ const App = () => {
     const onSubmit = () => {
         setItems((oldItems) => {
             return [...oldItems, inputList];
+        });
+        setInputList("");
+    }
+    const deleteItem = (id) => {
+        setItems((oldItems) => {
+            return oldItems.filter((arrElement, index) => {
+                return index !== id;
+            })
         })
     }
     return (
@@ -22,9 +30,17 @@ const App = () => {
                     <button onClick={onSubmit}> + </button>
                     <ol>
                         {/* <li>{inputList}</li> */}
-                        {items.map((itemVal) => {
-                            return <li>{itemVal}</li>;
-                        })}
+                        {items.map((itemVal, index) => {
+                            return (
+                            <>
+                                <div className="todo_style">
+                                    <i className="fa fa-times" aria-hidden="true" onClick={() => {
+                                        deleteItem(index)
+                                    }}></i>
+                                    <li>{itemVal}</li>    
+                                </div>
+                            </>
+                        )})}
                     </ol>
                 </div>
             </div>
