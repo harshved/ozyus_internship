@@ -1,9 +1,9 @@
 import React from "react";
 
-const About = () => {
+const About = (props) => {
     return(
         <>
-            <h1>I'm From About Page</h1>
+            <h1>I'm from {props.name} Page</h1>
         </>
     )
 }
