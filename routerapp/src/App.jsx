@@ -22,7 +22,7 @@ const App = () => {
                 <Route exact path='/search' element={<Search />} />
                 <Route exact path='/service' element={<Service name="Service"/>} />
                 <Route path='/user/:userName/:userLastName' element={<User/>} />
-                <Route element={<Error/>} />
+                <Route element={<Error/>} /> {/*Shows Error Page*/}
             </Routes>
             {/* <About/>
             <Contact/> */}
