@@ -8,6 +8,7 @@ const Navbar = () => {
             <div className="menu_style">
                 <NavLink exact to='/'>About Us</NavLink>
                 <NavLink exact to='/contact'>Contact Us</NavLink>
+                <NavLink exact to='/search'>Search</NavLink>
                 <NavLink exact to='/user/harsh/ved'>User</NavLink>
                 <NavLink exact to='/service'>Services</NavLink>
             </div>
